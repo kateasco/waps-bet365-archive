@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专题 · bet365 的日常与边界</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f9f8f6;
+            font-family: 'Helvetica Neue', 'PingFang SC', 'Noto Sans SC', sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+            padding: 2rem 1rem 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+            background: #ffffff;
+            padding: 2.5rem 2rem 3rem;
+            border-radius: 20px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        /* 杂志式横幅 */
+        .hero {
+            margin-bottom: 2.8rem;
+            border-bottom: 1px solid #eae7e2;
+            padding-bottom: 2.2rem;
+        }
+
+        .hero .label {
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #b0a99f;
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #2b2b2b;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            font-weight: 500;
+            background: #f0ede8;
+            padding: 0 0.2rem 0.1rem;
+        }
+
+        .hero .sub {
+            margin-top: 1.2rem;
+            font-size: 1rem;
+            color: #5f5b56;
+            border-left: 3px solid #c9c2b8;
+            padding-left: 1.2rem;
+            font-weight: 350;
+        }
+
+        /* 文章正文段落 */
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.25rem;
+            font-weight: 450;
+            margin-bottom: 0.8rem;
+            color: #2f2a24;
+            letter-spacing: 0.3px;
+            border-bottom: 1px dotted #dad5ce;
+            padding-bottom: 0.4rem;
+        }
+
+        .section p {
+            margin-bottom: 1.1rem;
+            font-size: 0.98rem;
+            text-align: justify;
+            word-break: break-word;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .inset-link {
+            color: #3f3a33;
+            border-bottom: 1px solid #c0b7ac;
+            text-decoration: none;
+            transition: border 0.2s, color 0.2s;
+            font-weight: 420;
+        }
+
+        .inset-link:hover {
+            border-bottom: 1px solid #7a6f5e;
+            color: #0f0e0c;
+        }
+
+        .pull-quote {
+            margin: 1.8rem 0 1.8rem 1rem;
+            padding-left: 1.2rem;
+            border-left: 4px solid #ddd6cb;
+            font-size: 1.1rem;
+            font-weight: 330;
+            color: #4f4941;
+            line-height: 1.5;
+        }
+
+        .note {
+            margin-top: 2.2rem;
+            padding: 1.4rem 0 0.8rem;
+            border-top: 1px solid #ece7e0;
+            font-size: 0.82rem;
+            color: #7b766e;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .note a {
+            color: #5b544b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 0.5px;
+            text-decoration-color: #b9b0a4;
+            font-weight: 400;
+        }
+
+        .note a:hover {
+            color: #1a1612;
+            text-decoration-color: #7a6f5e;
+        }
+
+        .faq-mini {
+            background: #f7f4f0;
+            padding: 1.2rem 1.4rem;
+            border-radius: 16px;
+            margin: 1.8rem 0 0.5rem;
+        }
+
+        .faq-mini summary {
+            font-weight: 400;
+            font-size: 0.9rem;
+            color: #3a3530;
+            cursor: default;
+            margin-bottom: 0.3rem;
+        }
+
+        .faq-mini p {
+            font-size: 0.9rem;
+            color: #514b43;
+            margin-top: 0.4rem;
+        }
+
+        /* 响应式 */
+        @media (max-width: 500px) {
+            .page {
+                padding: 1.6rem 1.2rem 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .sub {
+                font-size: 0.9rem;
+                padding-left: 0.9rem;
+            }
+
+            .section h2 {
+                font-size: 1.1rem;
+            }
+
+            .pull-quote {
+                margin-left: 0.5rem;
+                padding-left: 0.9rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 横幅 -->
+    <div class="hero">
+        <div class="label">专题 · 界面与日常</div>
+        <h1>在屏幕另一端,<br><em>bet365</em> 与观看方式</h1>
+        <div class="sub">一个平台如何融入千万人的赛事时刻 —— 并非指南, 而是一段侧写</div>
+    </div>
+
+    <!-- 第一部分：背景与主题 -->
+    <div class="section">
+        <h2>从一条链接开始</h2>
+        <p>
+            多年以前, 当你习惯性地打开某个熟悉的地址, 页面加载, 深色背景与绿色元素依次出现。那种界面语言几乎成为了一种辨识符号。
+            <a href="https://waps-bet365.com" class="inset-link">bet365</a> 所代表的不仅是功能入口, 更是一种围绕赛事展开的节奏感。
+            人们并非只是寻找赔率或统计, 而是在寻找一种“正在发生”的氛围。
+        </p>
+        <p>
+            在众多同类服务中, 它的界面保持了一种克制的统一性: 左侧导航、清晰的分组、高对比度数值。从产品角度看, 它并不试图讨好所有人,
+            而是为那些已经熟悉其逻辑的用户提供稳定的体验。这种设计哲学本身, 就值得被记录。
+        </p>
+    </div>
+
+    <!-- 第二部分：场景侧写 -->
+    <div class="section">
+        <h2>周末午后, 多屏之间</h2>
+        <p>
+            一位朋友曾这样描述: 周六傍晚, 客厅的电视播放着英超, 手机侧放在桌上, 屏幕上是 bet365 的即时数据。
+            他并不频繁操作, 只是偶尔点开某个联赛的详细信息。对他来说, 这个页面就像赛事背景音一样自然。
+            不需要过多说明, 他知道哪里可以找到下一场开赛时间, 哪里可以看到逐渐变化的数字。
+        </p>
+
+        <div class="pull-quote">
+            “界面越安静, 注意力就越集中在赛事本身。”
+        </div>
+
+        <p>
+            这种使用方式, 并不特殊。很多人将 bet365 当作一种信息前台——它不喧哗, 但总在那里。
+            从桌面浏览器到移动端, 布局的延续性让用户在切换设备时不至于迷失。虽然功能密度高, 但核心路径始终清晰。
+        </p>
+    </div>
+
+    <!-- 第三段：体验观察 -->
+    <div class="section">
+        <h2>不为所有人设计的界面</h2>
+        <p>
+            如果你第一次打开 bet365, 可能会被信息密度惊到。但这恰好是它的特点: 它假定用户已经知道自己在找什么。
+            没有浮夸的引导, 没有冗余的广告式欢迎。所有的模块都服务于一个目的: 让信息快速被读取。
+            这种直白, 在当下的互联网产品中反而显得稀缺。
+        </p>
+        <p>
+            当然, 它也并非完美。菜单层级在某些设备上略显拥挤, 部分页面加载速度受网络影响明显。
+            但它的核心——也就是那个无数人熟悉的绿色与白色的组合——始终保持着一种老派的可靠。
+            在变化频繁的数字环境中, 这种不变, 有时反而成为一种价值。
+        </p>
+    </div>
+
+    <!-- FAQ摘要 + 页尾访问提示 -->
+    <div class="faq-mini">
+        <summary>📎 常见疑问摘要</summary>
+        <p><strong>· 是否需要在某地才能使用？</strong> 服务范围因地区而异, 建议以 bet365 官方说明为准。</p>
+        <p><strong>· 移动端与桌面端体验一致吗？</strong> 核心功能一致, 但布局经过响应式调整, 以适应不同屏幕。</p>
+        <p><strong>· 如何理解界面上的各类数据？</strong> bet365 提供了详细的规则页面, 但更直接的方式是观察几场熟悉的赛事,
+        熟悉其表述习惯。</p>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <div class="note">
+        <span>专题 · 阅读与侧写 · 2025</span>
+        <span>了解更多: <a href="https://waps-bet365.com">bet365</a></span>
+    </div>
+
+</div>
+</body>
+</html>
